@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="system-utils",
-    version="0.1.0",
+    version="0.1.1",
     description="System utilities",
     long_description="System utilities.",
     author="ptdorf",
@@ -20,17 +20,8 @@ setup(
         "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
     ],
-    # packages=find_packages(exclude=["docs", "tests"]),
-    # install_requires=[
-    #     "MySQL-python"
-    # ],
-    # entry_points={
-    #     "console_scripts": [
-    #         "backup-mysql=backups.mysql:main",
-    #         "backup-postgres=backups.postgres:main",
-    #     ],
-    # },
     scripts=[
         "bin/process-memory"
+        "bin/git-info"
     ]
 )
