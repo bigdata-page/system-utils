@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="system-utils",
-    version="0.1.1",
+    version="0.1.2",
     description="System utilities",
     long_description="System utilities.",
     author="ptdorf",
