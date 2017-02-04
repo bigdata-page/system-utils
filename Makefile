@@ -1,12 +1,13 @@
 
 all:
-	python setup.py sdist bdist_wheel upload -r test
+	python setup.py sdist bdist_wheel upload
 
-new:
-	python setup.py sdist bdist_wheel
-	# twine register dist/*.tar.gz
-	# twine register dist/*.whl
-	twine upload -r test dist/*
+# twine:
+# 	make clean
+# 	python setup.py sdist bdist_wheel
+# 	twine register dist/*.tar.gz
+# 	twine register dist/*.whl
+# 	twine upload -r test dist/*
 
 docs:
 	@cd docs \
@@ -16,4 +17,4 @@ docs:
 clean:
 	rm -fr dist/ build/ *.egg-info
 
-.PHONY: all new docs clean
+.PHONY: all twine docs clean
