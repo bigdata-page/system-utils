@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -eu
+
+header() {
+  local header=${1:-HEADER}
+  echo
+  echo $header
+  printf "=%.0s" {1..105}
+  echo
+}
+
+header "REMOTES"
+git remote -v
+
+header "BRANCHES"
+git branch -a -v
+
+header "LAST 10 COMMITS"
+git --no-pager log --pretty=format:'%C(27)%h%Creset  %C(245)%ad%Creset  %Creset%<(50,trunc)%s  %C(228)%cn%Creset %C(198)%d' --date=short -n 10
+echo
