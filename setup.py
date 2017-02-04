@@ -21,7 +21,7 @@ setup(
         "Programming Language :: Python :: 2.7",
     ],
     scripts=[
-        "bin/process-memory"
-        "bin/git-info"
+        "bin/process-memory",
+        "bin/git-info",
     ]
 )
