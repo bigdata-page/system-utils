@@ -1,8 +1,8 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="system-utils",
-    version="0.1.2",
+    version="0.1.3",
     description="System utilities",
     long_description="System utilities.",
     author="ptdorf",
