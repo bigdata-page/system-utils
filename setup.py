@@ -2,8 +2,8 @@ from setuptools import setup
 
 setup(
     name="system-utils",
-    version="0.1.3",
-    description="System utilities",
+    version="0.1.4",
+    description="System utilities (v0.1.4)",
     long_description="System utilities.",
     author="ptdorf",
     author_email="ptdorf@gmail.com",
