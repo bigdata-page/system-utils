@@ -4,4 +4,4 @@ RUN mkdir /app
 COPY . /app
 
 WORKDIR /app
-RUN ./bin/gocd-password a
+RUN /app/bin/gocd-password a
