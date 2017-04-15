@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MKDIR /app
+RUN mkdir /app
 COPY . /app
 
 WORKDIR /app
